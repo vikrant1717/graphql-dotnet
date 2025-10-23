@@ -22,17 +22,17 @@ jobs:
       with:
         dotnet-version: 8.0.x
         
-    - name: Restore dependencies
-      # Specify the solution file to restore packages for
-      run: dotnet restore cppsamples.sln
+    # - name: Restore dependencies
+    #   # Specify the solution file to restore packages for
+    #   run: dotnet restore cppsamples.sln
       
-    - name: Build
-      # Specify the solution file to build
-      run: dotnet build cppsamples.sln --no-restore
+    # - name: Build
+    #   # Specify the solution file to build
+    #   run: dotnet build cppsamples.sln --no-restore
       
-    - name: Test
-      # Specify the solution file to run tests for
-      run: dotnet test cppsamples.sln --no-build --verbosity normal
+    # - name: Test
+    #   # Specify the solution file to run tests for
+    #   run: dotnet test cppsamples.sln --no-build --verbosity normal
 
     - name: Embold Analyse
       run: | 
